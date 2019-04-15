@@ -10,12 +10,13 @@ import java.util.UUID;
 import android.os.Handler;
 
 public class BluetoothService extends Thread {
-    public final int BT_RECEIVED_MESSAGE = 0;
+    public final static int BT_RECEIVED_MESSAGE = 0;
 
     private final UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
     private final InputStream mmInStream;
     private final OutputStream mmOutStream;
+    private final BluetoothSocket mSocket;
 
     private Handler mHandler;
     private final BluetoothDevice mDevice;
@@ -24,9 +25,9 @@ public class BluetoothService extends Thread {
         mDevice = device;
         mHandler = messageHandler;
 
-        BluetoothSocket socket = mDevice.createRfcommSocketToServiceRecord(uuid);
-        mmOutStream = socket.getOutputStream();
-        mmInStream = socket.getInputStream();
+        mSocket = mDevice.createRfcommSocketToServiceRecord(uuid);
+        mmOutStream = mSocket.getOutputStream();
+        mmInStream = mSocket.getInputStream();
 
     }
 
@@ -53,6 +54,14 @@ public class BluetoothService extends Thread {
             mmOutStream.write(msgBuffer);
         } catch (IOException e) {
             // TODO: Log exception
+        }
+    }
+
+    public void cleanUp() {
+        try {
+            mSocket.close();
+        } catch (Exception ex) {
+            // TODO: Log error. Probably not couldn't be opened.
         }
     }
 }
