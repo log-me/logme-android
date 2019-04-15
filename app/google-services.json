@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "745430381457",
+    "firebase_url": "https://logme-e5bd3.firebaseio.com",
+    "project_id": "logme-e5bd3",
+    "storage_bucket": "logme-e5bd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745430381457:android:f98735a84af0d932",
+        "android_client_info": {
+          "package_name": "com.gtu.logme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745430381457-24um7hh1k2b34stds46ma2g4lnr7fk9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gtu.logme",
+            "certificate_hash": "82e08544dbb2911e35fa4c5df8e7c06c3ac10fb6"
+          }
+        },
+        {
+          "client_id": "745430381457-uh4j54ft6qdp3fqjsorapi0dl5jnuj0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmrXY5tjj4bcraHOPJQ7_q9tVCGdrGMAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745430381457-uh4j54ft6qdp3fqjsorapi0dl5jnuj0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
