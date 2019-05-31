@@ -66,7 +66,7 @@ header.smaller .site-logo h1 { line-height: 30px; }
 header.smaller .site-logo h1 a { font-size: 30px;  }
 
 /* <<< Navigation >>> */
-.Navigation { float: right; width: 68.18%; margin-right: 11px; }
+.Navigation { float: right; width: 80%; margin-right: 11px; }
 .Navigation ul { list-style: none; margin: 0px; float: right; }
 .Navigation li { float: left; padding: 0px;  margin: 0px; height: 105px; position: relative; transition: all 0.3s ease; }
 .Navigation li a { padding: 41px 25px 3px 25px;; font-size: 15px; color: #fff; font-family: 'Open Sans', sans-serif; font-weight: 400; text-decoration: none; display: block; -webkit-transition: all 1s ease; transition: all 0.3s ease; }
